@@ -25,4 +25,3 @@ lazy val smApi = (project in file("service-module-api")).dependsOn(utils % "test
    ------------------- */
 
 lazy val utils = (project in file("utils"))
-
