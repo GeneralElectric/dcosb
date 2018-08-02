@@ -1,6 +1,7 @@
 *DC/OS Open Service Broker* is a toolkit that enables the quick and painless integration of (dcos-commons powered) DC/OS
 Services in to CloudFoundry, or any other OSB implementing platform, by providing a high level `ServiceModule` API, that allows for the service specific bits -mostly around transforming OSB configuration types to DC/OS package options and service intialization/teardown- to reside in a well isolated, plugin-like implementation class.
 
+[![Build Status](https://travis-ci.org/GeneralElectric/dcosb.svg?branch=master)](https://travis-ci.org/GeneralElectric/dcosb)
 
 No knowledge of the Open Service Broker spec or the DC/OS Service lifecycle management
 APIs is necessary - simply fill in the service specific gaps by extending the `ServiceModule` abstract class, drop credentials and
