@@ -1,0 +1,6 @@
+git:
+  submodules: true
+
+language: scala
+scala:
+  - 2.12.3
