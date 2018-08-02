@@ -1,13 +1,11 @@
 import java.io.File
 import DcosbBuild._
-// import WhiteSource._
 import sbt.Keys.libraryDependencies
 
 name := "dcosb"
 
 
 commonSettings
-// whitesourceSettings
 
 lazy val dcosb = (project in file(".")).aggregate(mesosUtils, dcosUtils, serviceBroker, smApi, utils)
 
