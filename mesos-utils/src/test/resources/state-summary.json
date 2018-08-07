@@ -1,0 +1,44 @@
+{
+  "hostname": "10.42.60.206",
+  "cluster": "lab",
+  "slaves": [],
+  "frameworks": [
+    {
+      "id": "1a5c08b6-4138-4205-aeab-630cbeb99b22-0000",
+      "name": "metronome",
+      "pid": "scheduler-bb9658d9-227b-436b-b2cc-6026e28da308@10.42.60.206:15201",
+      "used_resources": {
+        "disk": 0.0,
+        "mem": 0.0,
+        "gpus": 0.0,
+        "cpus": 0.0
+      },
+      "offered_resources": {
+        "disk": 0.0,
+        "mem": 0.0,
+        "gpus": 0.0,
+        "cpus": 0.0
+      },
+      "capabilities": [],
+      "hostname": "10.42.60.206",
+      "webui_url": "http:\/\/10.42.60.206:9090",
+      "active": true,
+      "connected": true,
+      "recovered": false,
+      "TASK_STAGING": 0,
+      "TASK_STARTING": 0,
+      "TASK_RUNNING": 0,
+      "TASK_KILLING": 0,
+      "TASK_FINISHED": 2,
+      "TASK_KILLED": 0,
+      "TASK_FAILED": 0,
+      "TASK_LOST": 0,
+      "TASK_ERROR": 0,
+      "TASK_UNREACHABLE": 0,
+      "slave_ids": [
+        "1a5c08b6-4138-4205-aeab-630cbeb99b22-S3",
+        "1a5c08b6-4138-4205-aeab-630cbeb99b22-S1"
+      ]
+    }
+  ]
+}

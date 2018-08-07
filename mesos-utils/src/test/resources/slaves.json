@@ -1,0 +1,248 @@
+{
+  "slaves": [
+    {
+      "id": "f18fcd65-5c63-4dfb-b233-f289aac416c5-S43",
+      "pid": "slave(1)@10.72.154.222:5051",
+      "hostname": "10.72.154.222",
+      "registered_time": 1490662500.25734,
+      "reregistered_time": 1490662500.25773,
+      "resources": {
+        "disk": 508358.0,
+        "mem": 14606.0,
+        "gpus": 0.0,
+        "cpus": 4.0,
+        "ports": "[1025-2180, 2182-3887, 3889-5049, 5052-8079, 8082-8180, 8182-32000]"
+      },
+      "used_resources": {
+        "disk": 0.0,
+        "mem": 1664.0,
+        "gpus": 0.0,
+        "cpus": 0.6
+      },
+      "offered_resources": {
+        "disk": 467398.0,
+        "mem": 3470.0,
+        "gpus": 0.0,
+        "cpus": 0.9,
+        "ports": "[1025-2180, 2182-3887, 3889-5049, 5052-8079, 8082-8180, 8182-20644, 20646-22389, 22391-22431, 22433-22732, 22734-25858, 25860-27896, 27898-32000]"
+      },
+      "reserved_resources": {
+        "predix-c6be02f0-11d7-4977-b0d8-0a56e0e3b179-role": {
+          "disk": 40960.0,
+          "mem": 9472.0,
+          "gpus": 0.0,
+          "cpus": 2.5,
+          "ports": "[20645-20645, 22390-22390, 22432-22432, 22733-22733, 25859-25859, 27897-27897]"
+        }
+      },
+      "unreserved_resources": {
+        "disk": 467398.0,
+        "mem": 5134.0,
+        "gpus": 0.0,
+        "cpus": 1.5,
+        "ports": "[1025-2180, 2182-3887, 3889-5049, 5052-8079, 8082-8180, 8182-20644, 20646-22389, 22391-22431, 22433-22732, 22734-25858, 25860-27896, 27898-32000]"
+      },
+      "attributes": {
+        "storage": "portworx_1"
+      },
+      "active": true,
+      "version": "1.0.3",
+      "reserved_resources_full": {
+        "predix-c6be02f0-11d7-4977-b0d8-0a56e0e3b179-role": [
+          {
+            "name": "cpus",
+            "type": "SCALAR",
+            "scalar": {
+              "value": 0.5
+            },
+            "role": "predix-c6be02f0-11d7-4977-b0d8-0a56e0e3b179-role",
+            "reservation": {
+              "principal": "cassandra-principal",
+              "labels": {
+                "labels": [
+                  {
+                    "key": "resource_id",
+                    "value": "184c3a1f-85bb-4bd2-8f3f-4eb4e7696038"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "mem",
+            "type": "SCALAR",
+            "scalar": {
+              "value": 1024.0
+            },
+            "role": "predix-c6be02f0-11d7-4977-b0d8-0a56e0e3b179-role",
+            "reservation": {
+              "principal": "cassandra-principal",
+              "labels": {
+                "labels": [
+                  {
+                    "key": "resource_id",
+                    "value": "4e3affdd-10d8-4391-958d-afa15c52ccd6"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "ports",
+            "type": "RANGES",
+            "ranges": {
+              "range": [
+                {
+                  "begin": 20645,
+                  "end": 20645
+                }
+              ]
+            },
+            "role": "predix-c6be02f0-11d7-4977-b0d8-0a56e0e3b179-role",
+            "reservation": {
+              "principal": "cassandra-principal",
+              "labels": {
+                "labels": [
+                  {
+                    "key": "resource_id",
+                    "value": "323e2d42-10cc-4adf-bfae-e339ce7c9758"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "disk",
+            "type": "SCALAR",
+            "scalar": {
+              "value": 40960.0
+            },
+            "role": "predix-c6be02f0-11d7-4977-b0d8-0a56e0e3b179-role",
+            "reservation": {
+              "principal": "cassandra-principal",
+              "labels": {
+                "labels": [
+                  {
+                    "key": "resource_id",
+                    "value": "407f8823-0fc8-4819-b7f6-078c9c2254d7"
+                  }
+                ]
+              }
+            },
+            "disk": {
+              "persistence": {
+                "id": "e2ec048d-f700-4ecd-894c-262214efa9d4",
+                "principal": "cassandra-principal"
+              },
+              "volume": {
+                "mode": "RW",
+                "container_path": "volume"
+              }
+            }
+          }
+        ]
+      },
+      "used_resources_full": [
+        {
+          "name": "cpus",
+          "type": "SCALAR",
+          "scalar": {
+            "value": 0.6
+          },
+          "role": "*"
+        },
+        {
+          "name": "mem",
+          "type": "SCALAR",
+          "scalar": {
+            "value": 1664.0
+          },
+          "role": "*"
+        }
+      ],
+      "offered_resources_full": [
+        {
+          "name": "ports",
+          "type": "RANGES",
+          "ranges": {
+            "range": [
+              {
+                "begin": 1025,
+                "end": 2180
+              },
+              {
+                "begin": 2182,
+                "end": 3887
+              },
+              {
+                "begin": 3889,
+                "end": 5049
+              },
+              {
+                "begin": 5052,
+                "end": 8079
+              },
+              {
+                "begin": 8082,
+                "end": 8180
+              },
+              {
+                "begin": 8182,
+                "end": 20644
+              },
+              {
+                "begin": 20646,
+                "end": 22389
+              },
+              {
+                "begin": 22391,
+                "end": 22431
+              },
+              {
+                "begin": 22433,
+                "end": 22732
+              },
+              {
+                "begin": 22734,
+                "end": 25858
+              },
+              {
+                "begin": 25860,
+                "end": 27896
+              },
+              {
+                "begin": 27898,
+                "end": 32000
+              }
+            ]
+          },
+          "role": "*"
+        },
+        {
+          "name": "disk",
+          "type": "SCALAR",
+          "scalar": {
+            "value": 467398.0
+          },
+          "role": "*"
+        },
+        {
+          "name": "cpus",
+          "type": "SCALAR",
+          "scalar": {
+            "value": 0.9
+          },
+          "role": "*"
+        },
+        {
+          "name": "mem",
+          "type": "SCALAR",
+          "scalar": {
+            "value": 3470.0
+          },
+          "role": "*"
+        }
+      ]
+    }
+  ]
+}

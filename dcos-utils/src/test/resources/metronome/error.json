@@ -1,0 +1,11 @@
+{
+  "message": "Object is not valid",
+  "details": [
+    {
+      "path": "/mem",
+      "errors": [
+        "is less than than 32"
+      ]
+    }
+  ]
+}

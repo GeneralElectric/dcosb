@@ -1,0 +1,54 @@
+{
+  "services": [
+    {
+      "id": "cf-service-uuid",
+      "name": "Test Service",
+      "description": "The most awesome service ever made",
+      "bindable": true,
+      "plan_updateable": true,
+      "tags": [
+        "awesome",
+        "cool",
+        "hip"
+      ],
+      "metadata": {
+        "displayName": "My Service",
+        "imageUrl": "",
+        "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        "providerDisplayName": "ACME Inc",
+        "documentationUrl": "http://google.com",
+        "supportUrl": "http://stackoverflow.com"
+      },
+      "plans": [
+        {
+          "id": "basic",
+          "name": "Basic",
+          "description": "A really, really basic plan",
+          "metadata": {
+            "displayName": "Basic Plan",
+            "bullets": [
+              "last service you'll ever need",
+              "affordable"
+            ],
+            "costs": [
+              {
+                "amount": {
+                  "currency": "USD",
+                  "amount": 0.0
+                },
+                "unit": "MONTHLY"
+              }
+            ]
+          },
+          "resources": {
+            "node": {
+              "cpu": 2,
+              "memoryMB": 2048,
+              "diskMB": 10240
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
