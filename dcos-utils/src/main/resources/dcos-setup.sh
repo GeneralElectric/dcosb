@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+dcos security org service-accounts create -p cassandra-principal.pem.pub -d "Cassandra service account" cassandra-principal && \
+dcos security secrets create-sa-secret cassandra-principal.pem cassandra-principal cassandra-secret && \
+curl -X PUT --insecure -H "Authorization: token=$(dcos config show core.dcos_acs_token)" $(dcos config show core.dcos_url)/acs/api/v1/acls/dcos:mesos:master:task:user:nobody -d '{"description":"Allows Linux user nobody to execute tasks"}' -H 'Content-Type: application/json' && \
+curl -X PUT --insecure -H "Authorization: token=$(dcos config show core.dcos_acs_token)" $(dcos config show core.dcos_url)/acs/api/v1/acls/dcos:mesos:master:framework:role:cassandra-role -d '{"description":"Controls the ability of cassandra-role to register as a framework with the Mesos master"}' -H 'Content-Type: application/json' && \
+curl -X PUT --insecure -H "Authorization: token=$(dcos config show core.dcos_acs_token)" $(dcos config show core.dcos_url)/acs/api/v1/acls/dcos:mesos:master:reservation:role:cassandra-role -d '{"description":"Controls the ability of cassandra-role to reserve resources"}' -H 'Content-Type: application/json' && \
+curl -X PUT --insecure -H "Authorization: token=$(dcos config show core.dcos_acs_token)" $(dcos config show core.dcos_url)/acs/api/v1/acls/dcos:mesos:master:volume:role:cassandra-role -d '{"description":"Controls the ability of cassandra-role to access volumes"}' -H 'Content-Type: application/json' && \
+curl -X PUT --insecure -H "Authorization: token=$(dcos config show core.dcos_acs_token)" $(dcos config show core.dcos_url)/acs/api/v1/acls/dcos:mesos:master:reservation:principal:cassandra-principal -d '{"description":"Controls the ability of cassandra-principal to reserve resources"}' -H 'Content-Type: application/json' && \
+curl -X PUT --insecure -H "Authorization: token=$(dcos config show core.dcos_acs_token)" $(dcos config show core.dcos_url)/acs/api/v1/acls/dcos:mesos:master:volume:principal:cassandra-principal -d '{"description":"Controls the ability of cassandra-principal to access volumes"}' -H 'Content-Type: application/json' && \
+dcos security org service-accounts create -p jwtRS256.key.pub -d "Cassandra Service Broker account" cassandra-broker && \
+curl -X PUT --insecure -H "Authorization: token=$(dcos config show core.dcos_acs_token)" $(dcos config show core.dcos_url)/acs/api/v1/acls/dcos:superuser/full -d '{"description":"Allows Linux user nobody to execute tasks"}' -H 'Content-Type: application/json'
+

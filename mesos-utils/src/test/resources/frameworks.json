@@ -1,0 +1,299 @@
+{
+  "frameworks": [
+    {
+      "id": "62033811-f2cd-47f1-97a1-a3b2f28802a4-0007",
+      "name": "predix-demo-1",
+      "pid": "scheduler-050103fc-664a-49ed-9bc2-d2100d9fb5f4@10.42.60.66:59180",
+      "used_resources": {
+        "disk": 81920.0,
+        "mem": 18432.0,
+        "gpus": 0.0,
+        "cpus": 5.0,
+        "ports": "[21468-21468, 21832-21832, 25525-25525, 26866-26866, 27914-27914, 29853-29853]"
+      },
+      "offered_resources": {
+        "disk": 0.0,
+        "mem": 0.0,
+        "gpus": 0.0,
+        "cpus": 0.0
+      },
+      "capabilities": [],
+      "hostname": "ip-10-42-60-66",
+      "webui_url": "",
+      "active": true,
+      "connected": true,
+      "recovered": false,
+      "user": "root",
+      "failover_timeout": 604800.0,
+      "checkpoint": true,
+      "registered_time": 1493933338.43049,
+      "unregistered_time": 0.0,
+      "principal": "cassandra-principal",
+      "resources": {
+        "disk": 81920.0,
+        "mem": 18432.0,
+        "gpus": 0.0,
+        "cpus": 5.0,
+        "ports": "[21468-21468, 21832-21832, 25525-25525, 26866-26866, 27914-27914, 29853-29853]"
+      },
+      "reregistered_time": 1493933778.37608,
+      "role": "predix-demo-1-role",
+      "tasks": [
+        {
+          "id": "node-1__bf5de62a-ab45-4843-8cd0-0fbca2c5e4c0",
+          "name": "node-1",
+          "framework_id": "62033811-f2cd-47f1-97a1-a3b2f28802a4-0007",
+          "executor_id": "node-1_executor__e1eabee7-d4f5-4302-a9e7-782551477fe4",
+          "slave_id": "62033811-f2cd-47f1-97a1-a3b2f28802a4-S2",
+          "state": "TASK_RUNNING",
+          "resources": {
+            "disk": 40960.0,
+            "mem": 8192.0,
+            "gpus": 0.0,
+            "cpus": 2.0,
+            "ports": "[21468-21468, 25525-25525, 26866-26866, 27914-27914, 29853-29853]"
+          },
+          "statuses": [
+            {
+              "state": "TASK_RUNNING",
+              "timestamp": 1493933843.89021,
+              "container_status": {
+                "container_id": {
+                  "value": "4f9af14a-abbf-4558-af92-32496565d1aa"
+                },
+                "network_infos": [
+                  {
+                    "ip_addresses": [
+                      {
+                        "ip_address": "10.42.60.66"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "labels": [
+            {
+              "key": "config_target",
+              "value": "d8125ba2-9c50-4004-9293-8ab8dc96d058"
+            },
+            {
+              "key": "offer_attributes",
+              "value": ""
+            },
+            {
+              "key": "offer_hostname",
+              "value": "10.42.60.66"
+            },
+            {
+              "key": "task_type",
+              "value": "CASSANDRA_DAEMON"
+            }
+          ],
+          "discovery": {
+            "visibility": "EXTERNAL",
+            "name": "node-1",
+            "ports": {
+              "ports": [
+                {
+                  "number": 25525,
+                  "protocol": "tcp",
+                  "labels": {
+                    "labels": [
+                      {
+                        "key": "VIP_545a2595-5653-4e89-ae4e-c26184c81fa5",
+                        "value": "node:9042"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "node-0__9228c40a-ceb6-48f7-9a33-b7b8fe8af011",
+          "name": "node-0",
+          "framework_id": "62033811-f2cd-47f1-97a1-a3b2f28802a4-0007",
+          "executor_id": "node-0_executor__3519016b-df89-4da0-bf57-d1228576a5ff",
+          "slave_id": "62033811-f2cd-47f1-97a1-a3b2f28802a4-S1",
+          "state": "TASK_RUNNING",
+          "resources": {
+            "disk": 40960.0,
+            "mem": 8192.0,
+            "gpus": 0.0,
+            "cpus": 2.0,
+            "ports": "[21468-21468, 25525-25525, 26866-26866, 27914-27914, 29853-29853]"
+          },
+          "statuses": [
+            {
+              "state": "TASK_RUNNING",
+              "timestamp": 1493933367.64826,
+              "container_status": {
+                "container_id": {
+                  "value": "d73fa218-5e65-4bd4-9209-0cefa82398b0"
+                },
+                "network_infos": [
+                  {
+                    "ip_addresses": [
+                      {
+                        "ip_address": "10.42.60.194"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "labels": [
+            {
+              "key": "config_target",
+              "value": "098c606d-0896-4d61-80c4-757775c2dc70"
+            },
+            {
+              "key": "offer_attributes",
+              "value": ""
+            },
+            {
+              "key": "offer_hostname",
+              "value": "10.42.60.194"
+            },
+            {
+              "key": "task_type",
+              "value": "CASSANDRA_DAEMON"
+            }
+          ],
+          "discovery": {
+            "visibility": "EXTERNAL",
+            "name": "node-0",
+            "ports": {
+              "ports": [
+                {
+                  "number": 25525,
+                  "protocol": "tcp",
+                  "labels": {
+                    "labels": [
+                      {
+                        "key": "VIP_61191f79-a275-4611-af51-94bf5746319f",
+                        "value": "node:9042"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "unreachable_tasks": [],
+      "completed_tasks": [],
+      "offers": [],
+      "executors": [
+        {
+          "executor_id": "node-1_executor__e1eabee7-d4f5-4302-a9e7-782551477fe4",
+          "name": "node-1_executor",
+          "framework_id": "62033811-f2cd-47f1-97a1-a3b2f28802a4-0007",
+          "command": {
+            "value": "export LD_LIBRARY_PATH=$MESOS_SANDBOX\/libmesos-bundle\/lib:$LD_LIBRARY_PATH && export MESOS_NATIVE_JAVA_LIBRARY=$(ls $MESOS_SANDBOX\/libmesos-bundle\/lib\/libmesos-*.so) && .\/executor\/bin\/cassandra-executor server executor\/conf\/executor.yml",
+            "argv": [],
+            "environment": {
+              "variables": [
+                {
+                  "name": "JAVA_HOME",
+                  "value": ".\/jre1.8.0_121"
+                },
+                {
+                  "name": "JAVA_OPTS",
+                  "value": "-Xmx768M"
+                },
+                {
+                  "name": "EXECUTOR_API_PORT",
+                  "value": "21832"
+                }
+              ]
+            },
+            "uris": [
+              {
+                "value": "https:\/\/downloads.mesosphere.com\/cassandra\/assets\/1.0.25-3.0.10\/executor.zip",
+                "executable": false
+              },
+              {
+                "value": "https:\/\/downloads.mesosphere.com\/libmesos-bundle\/libmesos-bundle-1.9-argus-1.1.x-3.tar.gz",
+                "executable": false
+              },
+              {
+                "value": "https:\/\/downloads.mesosphere.com\/cassandra\/assets\/apache-cassandra-3.0.10-bin-dcos.tar.gz",
+                "executable": false
+              },
+              {
+                "value": "https:\/\/downloads.mesosphere.com\/java\/jre-8u121-linux-x64.tar.gz",
+                "executable": false
+              }
+            ]
+          },
+          "resources": {
+            "disk": 0.0,
+            "mem": 1024.0,
+            "gpus": 0.0,
+            "cpus": 0.5,
+            "ports": "[21832-21832]"
+          },
+          "slave_id": "62033811-f2cd-47f1-97a1-a3b2f28802a4-S2"
+        },
+        {
+          "executor_id": "node-0_executor__3519016b-df89-4da0-bf57-d1228576a5ff",
+          "name": "node-0_executor",
+          "framework_id": "62033811-f2cd-47f1-97a1-a3b2f28802a4-0007",
+          "command": {
+            "value": "export LD_LIBRARY_PATH=$MESOS_SANDBOX\/libmesos-bundle\/lib:$LD_LIBRARY_PATH && export MESOS_NATIVE_JAVA_LIBRARY=$(ls $MESOS_SANDBOX\/libmesos-bundle\/lib\/libmesos-*.so) && .\/executor\/bin\/cassandra-executor server executor\/conf\/executor.yml",
+            "argv": [],
+            "environment": {
+              "variables": [
+                {
+                  "name": "JAVA_HOME",
+                  "value": ".\/jre1.8.0_121"
+                },
+                {
+                  "name": "JAVA_OPTS",
+                  "value": "-Xmx768M"
+                },
+                {
+                  "name": "EXECUTOR_API_PORT",
+                  "value": "21832"
+                }
+              ]
+            },
+            "uris": [
+              {
+                "value": "https:\/\/downloads.mesosphere.com\/cassandra\/assets\/1.0.25-3.0.10\/executor.zip",
+                "executable": false
+              },
+              {
+                "value": "https:\/\/downloads.mesosphere.com\/libmesos-bundle\/libmesos-bundle-1.9-argus-1.1.x-3.tar.gz",
+                "executable": false
+              },
+              {
+                "value": "https:\/\/downloads.mesosphere.com\/cassandra\/assets\/apache-cassandra-3.0.10-bin-dcos.tar.gz",
+                "executable": false
+              },
+              {
+                "value": "https:\/\/downloads.mesosphere.com\/java\/jre-8u121-linux-x64.tar.gz",
+                "executable": false
+              }
+            ]
+          },
+          "resources": {
+            "disk": 0.0,
+            "mem": 1024.0,
+            "gpus": 0.0,
+            "cpus": 0.5,
+            "ports": "[21832-21832]"
+          },
+          "slave_id": "62033811-f2cd-47f1-97a1-a3b2f28802a4-S1"
+        }
+      ]
+    }
+  ],
+  "unregistered_frameworks": []
+}

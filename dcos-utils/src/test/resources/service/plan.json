@@ -1,0 +1,21 @@
+{
+  "phases": [
+    {
+      "id": "ec3c6469-9c40-4e2b-8bc0-593c8c10c708",
+      "name": "node-deploy",
+      "steps": [
+        {
+          "id": "55ec5998-fb3d-4930-9b11-52ea69abaa53",
+          "status": "COMPLETE",
+          "name": "node-0:[server]",
+          "message": "com.mesosphere.sdk.scheduler.plan.DeploymentStep: 'node-0:[server] [55ec5998-fb3d-4930-9b11-52ea69abaa53]' has status: 'COMPLETE'."
+        }
+      ],
+      "status": "COMPLETE"
+    }
+  ],
+  "errors": [
+
+  ],
+  "status": "COMPLETE"
+}
